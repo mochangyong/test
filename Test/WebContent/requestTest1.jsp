@@ -28,8 +28,11 @@
 <td>√ÎπÃ</td>
 <td>
 <%
-String[] hobby= request
+String[] hobby= request.getParameterValues("hobby");
+for (int i = 0; i<hobby.length; i++){
 %>
+<%= hobby[i] %> &nbsp;&nbsp;
+<%} %>
 </table>
 </body>
 </html>
